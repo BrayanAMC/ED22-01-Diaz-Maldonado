@@ -8,7 +8,7 @@ find_package( OpenCV REQUIRED )
 include_directories( ${OpenCV_INCLUDE_DIRS})
 include_directories( "includes" )
 
-add_executable(Taller_opencv main.cpp)
+add_executable(Taller_opencv Detector.cpp Persona.cpp )
 
 target_link_libraries( Taller_opencv ${OpenCV_LIBS} )
 
