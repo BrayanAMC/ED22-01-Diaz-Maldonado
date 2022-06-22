@@ -41,13 +41,14 @@ int main() {
         vector<Persona> found = detector.detect(frame);
         for (vector<Persona>::iterator i = found.begin(); i != found.end(); ++i)
         {
-        Persona &p = *i;
-        cout << "(" << p.getXComienzo() << ", " << p.getYComienzo() << ")" << endl;
-        //detector.adjustRect(r);
-        rectangle(frame, cv::Point(p.getXComienzo(), p.getYComienzo()), cv::Point(p.getXFin(), p.getYFin()), cv::Scalar(0, 255, 0), 2);
-        circle(frame, cv::Point(p.getXCentro(), p.getYCentro()), 3, cv::Scalar(0, 0, 255), 3);
-        circle(frame, cv::Point(p.getXComienzo(), p.getYComienzo()), 3, cv::Scalar(255, 0, 255), 2);
-        circle(frame, cv::Point(p.getXFin(), p.getYFin()), 3, cv::Scalar(0, 255, 255), 2);
+
+            Persona &p = *i;
+            cout << "(" << p.getXComienzo() << ", " << p.getYComienzo() << ")" << endl;
+            //detector.adjustRect(r);
+            rectangle(frame, cv::Point(p.getXComienzo(), p.getYComienzo()), cv::Point(p.getXFin(), p.getYFin()), cv::Scalar(0, 255, 0), 2);
+            circle(frame, cv::Point(p.getXCentro(), p.getYCentro()), 3, cv::Scalar(0, 0, 255), 3);
+            circle(frame, cv::Point(p.getXComienzo(), p.getYComienzo()), 3, cv::Scalar(255, 0, 255), 2);
+            circle(frame, cv::Point(p.getXFin(), p.getYFin()), 3, cv::Scalar(0, 255, 255), 2);
         }       
         //fin codigo de for para detectar a las personas
 		// Display the frame
