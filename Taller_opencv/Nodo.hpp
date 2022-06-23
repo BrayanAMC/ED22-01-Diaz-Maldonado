@@ -10,10 +10,15 @@ private:
     Persona* persona;
     int id;
     int vistas;
+    Nodo *next;
 
 public:
+    Nodo(Persona *p);
     int getId();
-    int getVistas/();//contara las veces que no se ha visto la persona para saber si ha desaparecido la persona del rango de la camara del video
+    int getVistas();//contara las veces que no se ha visto la persona para saber si ha desaparecido la persona del rango de la camara del video
     void setId(int id);
     void setVistas(int vistas);
+    Nodo* getNext();
+    void setNext(Nodo* n);
+    Persona getPersona();
 }

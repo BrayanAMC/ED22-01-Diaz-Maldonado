@@ -4,6 +4,7 @@
 
 Nodo::Nodo(Persona p){
     vistas=0;
+    this->persona = p;
 
 }
 int Nodo::getVistas(){
@@ -18,4 +19,13 @@ void Nodo::setId(int id){
 }
 void Nodo::setVistas(int vistas){
     this->vistas = vistas;
+}
+void Nodo::setNext(Nodo* n){
+    this->next = n;
+}
+Nodo* Nodo::getNext(){
+    return next;
+}
+Persona Nodo::getPersona(){
+    return persona;
 }
