@@ -59,8 +59,8 @@ La arquitectura propuesto o algoritmo se centra en dividir un video frame por fr
 ### Detecor de personas 
 
 El modelo de deteccion de personas funciona gracias a las librerias de openCV las cuales identifican a una persona en un frame(o mas de una ) y las almacena en un vector que solo contiene objetos de tipo persona para posteriormente con un ciclo como se puede observar en la imagen se le asigna a cada persona un rectangulo y tres puntos criticos.
-
-
+  
+![](imagenes/codigo_deteccion_personas.png)
 
 Por ejemplo, 
 
