@@ -28,7 +28,7 @@ El problema planteado en este proyecto se basa en la problematica propuesta la c
 
 **Objetivo General**
 
-Desarrollar un sistema capaz de contar la cantidad de personas que entran, están y salen de un lugar. Además de reconocer a las personas para que esta sea única al entrar y única al salir.
+Desarrollar un sistema capaz de contar la cantidad de personas que entran y salen de un lugar. Además de reconocer a las personas para que esta sea única al entrar y única al salir.
 
 **Objetivos específicos**
 
@@ -38,7 +38,7 @@ Desarrollar un sistema capaz de contar la cantidad de personas que entran, está
 
 ### 1.3 Solución propuesta
 
-Para la resolucion se busca utilizar la ayuda de openCV combinado con la implementacion de algoritmos basado en listas enlazadas para resolver la problematica propuesta
+Para la resolucion se busca utilizar la ayuda de openCV combinado con la implementacion de algoritmos basado en listas enlazadas para resolver la problematica propuesta.
 
 ## 2. Materiales y métodos
 
@@ -58,41 +58,64 @@ La arquitectura propuesto o algoritmo se centra en dividir un video frame por fr
 
 ### Detecor de personas 
 
-El modelo de deteccion de personas funciona gracias a las librerias de openCV las cuales identifican a una persona en un frame(o mas de una ) y las almacena en un vector que solo contiene objetos de tipo persona para posteriormente con un ciclo como se puede observar en la imagen se le asigna a cada persona un rectangulo y tres puntos criticos.
-  
-![](imagenes/codigo_deteccion_personas.png)
-
-Por ejemplo, 
-
-#### Detector de caras
-
-El detector de caras utilizado fue xxx. Para utilizarlo se debe.... El código para detectar una cara en una imagen se muestra a continuación:
+El modelo de deteccion de personas funciona gracias a las librerias de openCV las cuales identifican a una persona en un frame(o mas de una) y las almacena en un vector que solo contiene objetos de tipo persona para posteriormente con un ciclo como se puede observar en el codigo se le asigna a cada persona un rectangulo y tres puntos criticos.
 
 ```c++
- 1. faceCascadePath = "./haarcascade_frontalface_default.xml";
- 2. faceCascade.load( faceCascadePath )
- 3. std::vector<Rect> faces;
- 4. faceCascade.detectMultiScale(frameGray, faces);
+  cv::Mat frame;
+	Detector detector;
+	LinkedList lista;//creamos la lista enlazada
 
- 5. for ( size_t i = 0; i < faces.size(); i++ )
- 6. {
- 7.  int x1 = faces[i].x;
- 8.  int y1 = faces[i].y;
- 9.  int x2 = faces[i].x + faces[i].width;
-10.  int y2 = faces[i].y + faces[i].height;
-11. }
+	// Loop through available frames
+	while (video.read(frame)) {
+    
+		
+		//detector.toggleMode();
+		//cout << detector.modeName();
+    vector<Persona> found = detector.detect(frame);//lista de personas identificadas con el opencv
+    for (vector<Persona>::iterator i = found.begin(); i != found.end(); ++i)
+    {	
+		    
+        Persona &p = *i;//el algoritmo detecta a mas de una persona y los introduce en un vector , luego found[i] iterara en el for
+        lista.insertarPrimer(&p);
+        cout << "(" << p.getXCentro() << ", " << p.getYCentro() << ")" << endl;
+
+        rectangle(frame, cv::Point(p.getXComienzo(), p.getYComienzo()), cv::Point(p.getXFin(), p.getYFin()), cv::Scalar(0, 255, 0), 2);
+        circle(frame, cv::Point(p.getXCentro(), p.getYCentro()), 3, cv::Scalar(0, 0, 255), 3);
+        circle(frame, cv::Point(p.getXComienzo(), p.getYComienzo()), 3, cv::Scalar(255, 0, 255), 2);
+        circle(frame, cv::Point(p.getXFin(), p.getYFin()), 3, cv::Scalar(0, 255, 255), 2);
+			
+      }   
+
 ```
-La primera linea carga el archivo de entrenamiento... etc
+
 
 ## 3. Resultados obtenidos
 
+Se logro el poder abrir un video y que en este se puedan identificar personas en cada frame del mismo.
+Se logro poder implementar rectangulo y circulos en cada una de las personas 
+se logro implementar los modulos de listas enlazadas con sus correspondientes metodos para la realizacion de el algoritmo propuesto.
+
+
 ## 4. Conclusiones
+
+En la realizacion de este proyecto(etapa 1) se busco resolver una problematica la cual se basaba en la identificacion de personas que entraban o salian de un recinto , para ellos se implementaron algoritmos y programas para la resolucion de dicha problematica.Ademas cabe destacar que gracias a este taller se pudo salir de la zona de confort y aprender de la manera correcta y aprender de verdad.
 
 # Anexos
 
 ## Anexo A: Instalación librerías OpenCV
 
+Para instalar las librerias de openCV primero se descargo el programa y luego se agregaron las direcciones de bin y lib a las variables de entorno del sistema operativo de el ordenador.
+
 ## Anexo B: Instalación de IDE y configuración librerías OpenCV
+
+Para la cofiguracion de la IDE se presentaron diversos problemas , al principio no se tenia muy claro el como configurar todo lo que tomo aproximadamente un dia , en palabras simples se descargaron 4 extensiones en el visual studio code las cuales fueron c/c++ ,c/c++ compile run , cmake,cmake tools
+
+## Anexo C: Principales problemas en el desarrollo del proyecto
+
+En primer lugar una de las grandes problematicas que se presentaron fue la poca experiencia y poca familiarizacion con visual studio code , ya que tomo aproximadamente un dia completo en poder configurarlo para que funcionara correctamente.
+
+La segunda problematica fue la poca experiencia practica con c++ lo cual dificulto el progreso,la lentitud de el algoritmo de deteccion de personas ya que para una sola imagen funciona bien pero para un video se tarda aproximadamente unos 20 segundos en cargar de frame a frame.
+
 
 # Referecia
 
