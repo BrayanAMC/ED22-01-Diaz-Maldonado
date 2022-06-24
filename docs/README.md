@@ -7,8 +7,8 @@
 
 **Alumnos:**
 
-* Alumno 01 (Rol)
-* Alumno 02 (Rol)
+* Brayan Alexis Maldonado Carrasco - Programador Pricipal / Lider
+* Martín Enrique A. Díaz Tapia - Programador Secundario
 
 ## Resumen 
 
@@ -32,13 +32,13 @@ Dado el laboratorio describir como se entiende el problema bajo sus propias pala
 
 **Objetivo General**
 
-El fin que se desea llegar. (Comenzar con un verbo: "Construir un sistema...", "Desarrollar un sistema...", etc)
+Desarrollar un sistema capaz de contar la cantidad de personas que entran, están y salen de un lugar. Además de reconocer a las personas para que esta sea única al entrar y única al salir.
 
 **Objetivos específicos**
 
-1. Objetivo 1
-2. Objetivo 2
-3. Objetivos 3
+1. Lograr que el programa detecte personas, enfocadas a cuantas entran y cuantas salen diferenciandolas.
+2. Lograr que el programa identifique a las personas mediante un tipo de reconomiento, generando que la persona sea única. 
+3. Lograr que el programa funcione completamente con ambos puntos anteriores.
 
 Los objetivos específicos son acciones específicas que son desarrolladas para lograr cumplir el objetivo general, por ejemplo:
 
@@ -59,7 +59,7 @@ Explicar brevemente como se espera desarrollar el trabajo de implementación.
 
 ### 2.1 Instalación
 
-Describir brevemente las librerías utilizadas para la instalación y programas utilizados para la ejecución del código. (Agregar una sección de anexo para describir como fueron instaladas las librerías de OpenCV y la IDE utilzada para el trabajo)
+La librería utilizada es OpenCV en C++ , la que en un principio nos presentó inconvenientes junto a Visual Studio, debido a recurrentes errores durante la instalacion en 3 equipos diferentes. Uno de esos errores, y el más complicado de resolver, fué que al momento de instalar Visual Studio este arrojaba error de archivos durante la descarga y por lo tanto se asociaba a un problema de conexion de internet. Investigando, hay errores al respecto pero nada que nos pudiera ayudar de primera mano ya que nuestra conexion a internet no era el inconveniente. Finalmente Re-instalando todo nuevamente, funcionó.  
 
 ### 2.2 Diseño 
 
