@@ -6,8 +6,8 @@
 
 ### Integrantes
 
-* Alumno 01 (Rol)
-* Alumno 02 (Rol)
+* Brayan Alexis Maldonado Carrasco 
+* Martín Enrique A. Díaz Tapia
 
 ### Bitácora
 
