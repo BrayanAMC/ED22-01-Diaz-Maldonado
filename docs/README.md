@@ -3,7 +3,7 @@
 
 # Informe Técnico 
 ## Curso: Estructura de datos
-### Detección y reidentificación de caras en secuencias de imágenes o video
+### Detección y reidentificación de personas en secuencias de imágenes o video
 
 **Alumnos:**
 
@@ -12,21 +12,17 @@
 
 ## Resumen 
 
-> Agregar un resumen que describa el trabajo realizado y sus resultados. (Entre 150 y 180 palabras)
-> Más cosas...
-> El resumen indicarlo como cita con el comando `>`
+> En este taller se realizara un software de identificacion de personas el cual funcionara a base a inteligencia artificial previamente entrenada , el cual reconocera personas en secuencias de imagenes o videos mediante una camara o un video ya previamente grabado.El programa en el transcurso de su ejecucion se podra ver como identifica a las personas presentes en el video y las clasifica segun diversos parametros(como por ejemplo posicion), ademas de resaltar un rectangulo de color rojo sobre cada una de estas personas , al terminar la ejecucion del programa se podra saber cuantas personas diferentes entre si han pasado por en frente de la camara , cuantas han entrado y salido del resinto entre otros. 
 
 ## 1. Introducción
 
-La primera función de un reporte técnico es plasmar la información necesaria para que otras personas puedan reproducir el sistema propuesto o puedan entender su fucnionamiento . Para cumplir anterior se debe diferenciar claramente entre los artefactos de diseño e implementación. En el caso de un desarrollo tecnológico los algoritmos son importantes como componente de diseño y los programas generalmente son irrelevantes y deben resumidos o agregados en anexos en el documento. Los programas no son importantes en el documento, salvo si se quiere explicar conceptos expecíficos del lenguaje o del algoritmo implementado.
+El proyecto en desarrollo propone implementar un sistema de vigilancia basado en el reconocimiento de personas , para esto se utilizaran diferentes recursos como openCV , cmake y se programara en visual studio code como IDE.
 
-La redacción debe ser formal y de modo impersonal. No se debe utlizar primera persona del singular o plural. Se debe evitar el uso de cualquier calificativo sustituyéndolo siempre utilizando datos concretos y rastreables en documentos o publicaciones a través de referencias bibliográficas. Por ejemplo, no calificar algo como: "muy importante", "sustancial", "muy usadoo" o "mucho mejor".
-
-Las comparaciones deben concretarse con hechos y datos, sin frases ambiguas o términos generales. Por ejemplo, nunca se debe redactar frases como "el método es mejor que el método B". Lo correcto es decir, el error promedio de el método A es de 5 %, correspondiendo a la mitad del error de 10% obtenido utilizando el método B". El tiempo verbal es usualmente presente. No se debe perder de vista que se está explicando ”como hacer algo”, en vez de ”qué se hizo”. Todo aspecto circunstancial es irrelevante para el documento. Por ejemplo, si se ha desarrollado en el laboratorio X, o en el curso Y, con el profesor Z, etc.
+En primera instancia en este proyecto habran tres etapas, la primera es la descripcion de la problematica a resolver,la segunda etapa hablara sobre como abordar dicha problematica y como se desarrollara para llegar a la solucion de la misma, y por ultimo en la tercera etapa se obtendran retroalimentaciones sobre los resultados obtenidos para finalizar con la conclusion del proyecto.
 
 ### 1.1 Descripción del problema
 
-Dado el laboratorio describir como se entiende el problema bajo sus propias palabras.
+El problema planteado en este proyecto se basa en la problematica propuesta la cual consiste en un programa que pueda detectar personas que entran y salen de un recinto ademas de poder diferenciar entre personas diferentes y calcular datos en base al flujo de personas.
 
 ### 1.2 Objetivos 
 
@@ -40,18 +36,9 @@ Desarrollar un sistema capaz de contar la cantidad de personas que entran, está
 2. Lograr que el programa identifique a las personas mediante un tipo de reconomiento, generando que la persona sea única. 
 3. Lograr que el programa funcione completamente con ambos puntos anteriores.
 
-Los objetivos específicos son acciones específicas que son desarrolladas para lograr cumplir el objetivo general, por ejemplo:
-
-1. Investigar  el  estado  del  arte  de  visión  por  computador  y  audio  para  resolver  tareas de  clasificación unimodal y multimodal aplicado  al  problema  de  reconocimiento  de emociones.
-2.  Seleccionar  uno  o  dos  métodos  estudiados  en  el  estado  del  arte  para  la  estimación  de  laemoción utilizando datos unimodales o multimodales.
-3.  Implementar los métodos seleccionados utilizando el lenguaje de programación Python y laslibrerías suministradas por Pytorch.
-4.  Validar  los  resultados  por  medio  bases  de  datos  especializadas  para  el  desarrollo  deaplicaciones basadas en la estimación de la emoción y que incluyan varios modos de atributoscomo: imágenes, sonido y/o texto.
-5.  Proponer  mejoras  a  los  modelos  implementados  para  mejorar  su  desempeño  en  futurasimplementaciones o proyectos de investigación.
-6.  Difundir los resultados en medios científicos nacionales o internacionales.
-
 ### 1.3 Solución propuesta
 
-Esbozo de la solución propuesta, se espera que esta vaya evolucionando a medida que se avanza en el proyecto.
+Para la resolicion se busca utilizar la ayuda de openCV combinado con la implementacion de algoritmos basado en listas enlazadas para resolver la problematica propuesta
 
 ## 2. Materiales y métodos
 
