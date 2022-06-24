@@ -324,6 +324,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClCompile Include="C:\Users\Brayann\opencv_test2\ED22-01-Diaz-Maldonado\Taller_opencv\main.cpp" />
     <ClCompile Include="C:\Users\Brayann\opencv_test2\ED22-01-Diaz-Maldonado\Taller_opencv\Persona.cpp" />
     <ClCompile Include="C:\Users\Brayann\opencv_test2\ED22-01-Diaz-Maldonado\Taller_opencv\Detector.cpp" />
+    <ClCompile Include="C:\Users\Brayann\opencv_test2\ED22-01-Diaz-Maldonado\Taller_opencv\LinkedList.cpp" />
+    <ClCompile Include="C:\Users\Brayann\opencv_test2\ED22-01-Diaz-Maldonado\Taller_opencv\Nodo.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="C:\Users\Brayann\opencv_test2\ED22-01-Diaz-Maldonado\Taller_opencv\build\ZERO_CHECK.proj">

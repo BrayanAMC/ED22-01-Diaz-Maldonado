@@ -1,8 +1,8 @@
 #include <iostream>
 #include "Nodo.hpp"
+#include "Persona.hpp"
 
-
-Nodo::Nodo(Persona p){
+Nodo::Nodo(Persona *p){
     vistas=0;
     this->persona = p;
 
@@ -26,6 +26,6 @@ void Nodo::setNext(Nodo* n){
 Nodo* Nodo::getNext(){
     return next;
 }
-Persona Nodo::getPersona(){
+Persona* Nodo::getPersona(){
     return persona;
 }

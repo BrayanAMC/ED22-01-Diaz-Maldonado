@@ -1,6 +1,6 @@
-#ifndef NODO_H
-#define NODO_H
-
+//#ifndef NODO_H
+//#define NODO_H
+#pragma once
 #include <iostream>
 #include "Persona.hpp"
 using namespace cv;
@@ -20,5 +20,5 @@ public:
     void setVistas(int vistas);
     Nodo* getNext();
     void setNext(Nodo* n);
-    Persona getPersona();
-}
+    Persona* getPersona();
+};

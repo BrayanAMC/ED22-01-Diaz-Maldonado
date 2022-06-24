@@ -8,6 +8,7 @@
 #include <time.h>
 #include "Detector.hpp"
 #include "Persona.hpp"
+#include "LinkedList.hpp"
 
 using namespace cv;
 using namespace std;
@@ -18,35 +19,35 @@ int main() {
 	cv::VideoCapture video("C:/Users/Brayann/Downloads/people_walking2.mp4");
     
 
-	// Check that video is opened
+	// verifica que el video este abierto
 	if (!video.isOpened()) return -1;
 
 	// For saving the frame
 	//cv::Mat frame;
-    //Detector detector;
+    
     //frame es la imagen
     //detector.toggleMode();
     //cout << detector.modeName() << endl;//lineas copiadas de detectPeople
 
-	// Get video resolution
-	//int frameWidth = video.get(cv::CAP_PROP_FRAME_WIDTH);
-	//int frameHeigth = video.get(cv::CAP_PROP_FRAME_HEIGHT);
+	
 
 	
     cv::Mat frame;
 	Detector detector;
+	LinkedList lista;//creamos la lista enlazada
+
 	// Loop through available frames
 	while (video.read(frame)) {
-        //inicio codigo de for para detectar a las personas
 		
 		//detector.toggleMode();
 		//cout << detector.modeName();
-        vector<Persona> found = detector.detect(frame);
+        vector<Persona> found = detector.detect(frame);//lista de personas identificadas con el opencv
         for (vector<Persona>::iterator i = found.begin(); i != found.end(); ++i)
         {	
 		
-            Persona &p = *i;
-            //cout << "(" << p.getXComienzo() << ", " << p.getYComienzo() << ")" << endl;
+            Persona &p = *i;//el algoritmo detecta a mas de una persona y los introduce en un vector , luego found[i] iterara en el for
+			lista.insertarPrimer(&p);
+            cout << "(" << p.getXCentro() << ", " << p.getYCentro() << ")" << endl;
           
             rectangle(frame, cv::Point(p.getXComienzo(), p.getYComienzo()), cv::Point(p.getXFin(), p.getYFin()), cv::Scalar(0, 255, 0), 2);
             circle(frame, cv::Point(p.getXCentro(), p.getYCentro()), 3, cv::Scalar(0, 0, 255), 3);
