@@ -38,7 +38,7 @@ Desarrollar un sistema capaz de contar la cantidad de personas que entran, está
 
 ### 1.3 Solución propuesta
 
-Para la resolicion se busca utilizar la ayuda de openCV combinado con la implementacion de algoritmos basado en listas enlazadas para resolver la problematica propuesta
+Para la resolucion se busca utilizar la ayuda de openCV combinado con la implementacion de algoritmos basado en listas enlazadas para resolver la problematica propuesta
 
 ## 2. Materiales y métodos
 
@@ -50,11 +50,17 @@ La librería utilizada es OpenCV en C++ , la que en un principio nos presentó i
 
 ### 2.2 Diseño 
 
-Explicar los componentes (módulos o clases) utilizados para resolver el problema. Indicar arquitectura propuesta, diagrama de clases u otro artefacto que estime conveniente para explicar el diseño de su implimentación.
+Se utilizaron las siguientes clases : Detector.hpp Detector.cpp Persona.hpp Persona.cpp main.cpp Nodo.hpp Nodo.cpp LinkedList.hpp LinkedList.cpp CMakeList.txt 
+La arquitectura propuesto o algoritmo se centra en dividir un video frame por frame y luego trabajar de forma individual en cada uno de ellos , primero se reconocen las personas en un frame y luego se almacenan dichas personas en una lista enlazada , luego cuando se trabaja con el frame siguiente se compararan las posiciones de las personas del nuevo frame con las del frame anterior para determinar si la persona aun esta en el rango de la camara del video , determinar si la persona ya salio de este rango etc.
+
 
 ### 2.3 Implementación
 
-Explicar brevemente algunos aspectos de implementación: Por ejemplo, detector de caras utilizado. Se pueden realizar pequeñas reseñas al código para indicar elementos importantes en el trabajo.
+### Detecor de personas 
+
+El modelo de deteccion de personas funciona gracias a las librerias de openCV las cuales identifican a una persona en un frame(o mas de una ) y las almacena en un vector que solo contiene objetos de tipo persona para posteriormente con un ciclo como se puede observar en la imagen se le asigna a cada persona un rectangulo y tres puntos criticos.
+
+
 
 Por ejemplo, 
 
