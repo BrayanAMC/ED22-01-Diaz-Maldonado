@@ -12,5 +12,5 @@
 | 21/JUN | OBJ-06    | Correcion de codigo para poder detectar personas en frames(video) y no en imagenes | pinhasaurio | 3 horas | 4.5 horas |
 | 23/JUN | OBJ-07    | Creacion de primeras clases enfocadas a algoritmo para guardar personas en listas enlazadas | pinhasaurio | 1 horas | 2 horas |
 | 23/JUN | OBJ-08    | Redacción del informe | MrStark7 | 3 horas | 3 horas |
-| 23/JUN | OBJ-09    | Corrección del informe | MrStark7 | 1 hora | 30 minutos |
-| 23/JUN | OBJ-10    | Finalizacion del proyecto para la primera entrega (no se agregan mas modificaciones) | pinhasaurio - MrStark7 | 5 horas | 8 horas |
+| 24/JUN | OBJ-09    | Corrección y mejora del informe | MrStark7 | 1 hora | 2 horas |
+| 24/JUN | OBJ-10    | Finalizacion del proyecto para la primera entrega (no se agregan mas modificaciones) | pinhasaurio - MrStark7 | 5 horas | 8 horas |
