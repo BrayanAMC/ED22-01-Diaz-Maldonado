@@ -16,10 +16,10 @@ void LinkedList::insertarPrimer(Persona* p){
     
           
 }
-Nodo* LinkedList::getFirst(){
+Nodo* LinkedList::getFirst(){//se obtiene el primer elemento de la lista
     return first;
 }
-int LinkedList::getSize(){
+int LinkedList::getSize(){//se obtiene el tamaño de la lista
     return size;
 }
 void LinkedList::eliminarNodo(int id){
