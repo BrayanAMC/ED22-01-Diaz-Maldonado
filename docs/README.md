@@ -12,17 +12,17 @@
 
 ## Resumen 
 
-> En este taller se realizara un software de identificacion de personas el cual funcionara a base a inteligencia artificial previamente entrenada , el cual reconocera personas en secuencias de imagenes o videos mediante una camara o un video ya previamente grabado.El programa en el transcurso de su ejecucion se podra ver como identifica a las personas presentes en el video y las clasifica segun diversos parametros(como por ejemplo posicion), ademas de resaltar un rectangulo de color rojo sobre cada una de estas personas , al terminar la ejecucion del programa se podra saber cuantas personas diferentes entre si han pasado por en frente de la camara , cuantas han entrado y salido del resinto entre otros. 
+> En este taller se realizara un software de identificacion de personas el cual funcionara a base a inteligencia artificial previamente entrenada , el que reconocerá personas en secuencias de imagenes o videos mediante una cámara o un video ya previamente grabado. En el programa, durante su ejecución, se podrá ver como identifica a las personas presentes en el video y las clasifica según diversos parametros (como por ejemplo posición), además de resaltar un rectangulo de color rojo sobre cada una de estas personas , al terminar la ejecucion del programa se podra saber cuantas personas diferentes hay entre sí a la vez de saber si han pasado por en frente de la camara , cuantas han entrado y cuantas han salido del recinto, entre otros. Recordemos que para este programa se pretende que cada persona sea única dentro del analísis para evitar que una misma persona sea reconocida 2 o más veces independiente de si esta ha entrado o salido.
 
 ## 1. Introducción
 
-El proyecto en desarrollo propone implementar un sistema de vigilancia basado en el reconocimiento de personas , para esto se utilizaran diferentes recursos como openCV , cmake y se programara en visual studio code como IDE.
+El proyecto en desarrollo propone implementar un sistema de vigilancia y conteo mediante el reconocimiento de personas , para esto se utilizaran diferentes recursos como OpenCV , CMake y se programará todo el ya conocido software IDE: Visual Studio Code.
 
-En primera instancia en este proyecto habran tres etapas, la primera es la descripcion de la problematica a resolver,la segunda etapa hablara sobre como abordar dicha problematica y como se desarrollara para llegar a la solucion de la misma, y por ultimo en la tercera etapa se obtendran retroalimentaciones sobre los resultados obtenidos para finalizar con la conclusion del proyecto.
+En primera instancia en este proyecto habrán tres etapas, la primera es la descripción de la problematica a resolver, la segunda etapa hablara sobre como abordar dicha problematica y como será el desarrollo para llegar a la solucion de la misma y finalmente en la tercera etapa se obtendran retroalimentaciones sobre los resultados obtenidos para finalizar con la conclusión del proyecto.
 
 ### 1.1 Descripción del problema
 
-El problema planteado en este proyecto se basa en la problematica propuesta la cual consiste en un programa que pueda detectar personas que entran y salen de un recinto ademas de poder diferenciar entre personas diferentes y calcular datos en base al flujo de personas.
+Para este proyecto se ha soliciado un programa que sea caaz de detectar personas que entran y salen de un recinto además de poder diferenciar entre personas diferentes, es decir que esta persona sea única a sabiendas de que pueda existir una persona con características similares, y con ellos calcular datos sobre el flujo y tránsito de personas.
 
 ### 1.2 Objetivos 
 
@@ -38,15 +38,15 @@ Desarrollar un sistema capaz de contar la cantidad de personas que entran y sale
 
 ### 1.3 Solución propuesta
 
-Para la resolucion se busca utilizar la ayuda de openCV combinado con la implementacion de algoritmos basado en listas enlazadas para resolver la problematica propuesta.
+Para la resolucion utilizaremos la ayuda de OpenCV combinado con la implementacion de algoritmos basado en listas enlazadas para resolver la problematica propuesta. Todo codificado en VS Code y llevando registro de los avances en GitHub.
 
 ## 2. Materiales y métodos
 
-Explicar brevemente como se espera desarrollar el trabajo de implementación.
+Esperamos desarrollar el trabajo mediante, y en su mayoría, investigación personal además de los datos y asistencia recibida por los videos de Ayudantía entregados.
 
 ### 2.1 Instalación
 
-La librería utilizada es OpenCV en C++ , la que en un principio nos presentó inconvenientes junto a Visual Studio, debido a recurrentes errores durante la instalacion en 3 equipos diferentes. Uno de esos errores, y el más complicado de resolver, fué que al momento de instalar Visual Studio este arrojaba error de archivos durante la descarga y por lo tanto se asociaba a un problema de conexion de internet. Investigando, hay errores al respecto pero nada que nos pudiera ayudar de primera mano ya que nuestra conexion a internet no era el inconveniente. Finalmente Re-instalando todo nuevamente, funcionó.  
+La librería utilizada es OpenCV en C++ , la que en un principio nos presentó inconvenientes junto a Visual Studio, debido a recurrentes errores durante la instalacion en 3 equipos diferentes. Uno de esos errores, y el más complicado de resolver, fué que al momento de instalar Visual Studio este arrojaba error de archivos durante la descarga y por lo tanto se asociaba a un problema de conexion de internet. Investigando descubirmos que hay errores al respecto pero nada que nos pudiera ayudar de primera mano ya que nuestra conexion a internet no era el inconveniente. Finalmente Re-instalando todo nuevamente, funcionó.  
 
 ### 2.2 Diseño 
 
@@ -91,14 +91,14 @@ El modelo de deteccion de personas funciona gracias a las librerias de openCV la
 
 ## 3. Resultados obtenidos
 
-Se logro el poder abrir un video y que en este se puedan identificar personas en cada frame del mismo.
-Se logro poder implementar rectangulo y circulos en cada una de las personas 
-se logro implementar los modulos de listas enlazadas con sus correspondientes metodos para la realizacion de el algoritmo propuesto.
+- Se logró abrir un video y que en este se puedan identificar personas en cada frame del mismo.
+- Se logró poder implementar un rectangulo y circulos en cada una de las personas para destacar el reconocimiento en la imagen. 
+- Se logró implementar los modulos de listas enlazadas con sus correspondientes metodos para la realizacion de el algoritmo propuesto.
 
 
 ## 4. Conclusiones
 
-En la realizacion de este proyecto(etapa 1) se busco resolver una problematica la cual se basaba en la identificacion de personas que entraban o salian de un recinto , para ellos se implementaron algoritmos y programas para la resolucion de dicha problematica.Ademas cabe destacar que gracias a este taller se pudo salir de la zona de confort y aprender de la manera correcta y aprender de verdad.
+En la realización de este proyecto (etapa 1) se busco resolver una problematica la cual es la identificacion de personas que entraban o salian de un recinto , para ellos se implementaron algoritmos y programas para la resolucion de dicha problematica. Además cabe destacar que gracias a este taller se pudo salir de la zona de confort en programación, aprender de la manera correcta y aprender más del trabajo "real" al que nos podemos exponer en al vida real.
 
 # Anexos
 
