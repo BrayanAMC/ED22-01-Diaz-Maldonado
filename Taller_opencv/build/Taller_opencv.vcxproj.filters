@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Brayann\opencv_test2\ED22-01-Diaz-Maldonado\Taller_opencv\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Brayann\opencv_test2\ED22-01-Diaz-Maldonado\Taller_opencv\Persona.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Brayann\opencv_test2\ED22-01-Diaz-Maldonado\Taller_opencv\Detector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Brayann\opencv_test2\ED22-01-Diaz-Maldonado\Taller_opencv\LinkedList.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Brayann\opencv_test2\ED22-01-Diaz-Maldonado\Taller_opencv\Nodo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Brayann\opencv_test2\ED22-01-Diaz-Maldonado\Taller_opencv\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{C287891D-6969-3A1C-AE2E-458384993FE8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

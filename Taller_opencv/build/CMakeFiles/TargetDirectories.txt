@@ -1,0 +1,9 @@
+C:/Users/Brayann/opencv_test2/ED22-01-Diaz-Maldonado/Taller_opencv/build/CMakeFiles/Experimental.dir
+C:/Users/Brayann/opencv_test2/ED22-01-Diaz-Maldonado/Taller_opencv/build/CMakeFiles/Nightly.dir
+C:/Users/Brayann/opencv_test2/ED22-01-Diaz-Maldonado/Taller_opencv/build/CMakeFiles/Continuous.dir
+C:/Users/Brayann/opencv_test2/ED22-01-Diaz-Maldonado/Taller_opencv/build/CMakeFiles/NightlyMemoryCheck.dir
+C:/Users/Brayann/opencv_test2/ED22-01-Diaz-Maldonado/Taller_opencv/build/CMakeFiles/Taller_opencv.dir
+C:/Users/Brayann/opencv_test2/ED22-01-Diaz-Maldonado/Taller_opencv/build/CMakeFiles/PACKAGE.dir
+C:/Users/Brayann/opencv_test2/ED22-01-Diaz-Maldonado/Taller_opencv/build/CMakeFiles/RUN_TESTS.dir
+C:/Users/Brayann/opencv_test2/ED22-01-Diaz-Maldonado/Taller_opencv/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/Brayann/opencv_test2/ED22-01-Diaz-Maldonado/Taller_opencv/build/CMakeFiles/ZERO_CHECK.dir

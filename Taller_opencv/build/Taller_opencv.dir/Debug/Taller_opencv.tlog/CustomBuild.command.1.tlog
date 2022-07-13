@@ -1,0 +1,10 @@
+^C:\USERS\BRAYANN\OPENCV_TEST2\ED22-01-DIAZ-MALDONADO\TALLER_OPENCV\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Brayann/opencv_test2/ED22-01-Diaz-Maldonado/Taller_opencv -BC:/Users/Brayann/opencv_test2/ED22-01-Diaz-Maldonado/Taller_opencv/build --check-stamp-file C:/Users/Brayann/opencv_test2/ED22-01-Diaz-Maldonado/Taller_opencv/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
